@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/img4.png)
+}
+
+
+h1 {
+    color: white;
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+h2 {
+    color: white;
+}
+
+h3 {
+    color: white;
+    padding-bottom: 8px;
+}
+
+ul {
+    padding-left: 30px;
+    list-style-type: none;
+}
+
+main {
+    flex: 1;
+    padding-top: 20px;
+}
+
+.container {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+section {
+    padding-bottom: 20px;
+}
+
+#aside {
+    background-color: rgb(6, 7, 17);
+    width: 20vw;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#perfil-foto{
+    width: 170px;
+    height: 170px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    border: 3px solid #3610de;
+}
+
+.fa-github {
+    font-size: 30px;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    color: black;
+}
+
+#dados p {
+    padding-top: 12px;
+    padding-bottom: 16px;
+}
+
+#dados h4 {
+    padding-top: 12px;
+}
+
+#dados ul {
+    padding-bottom: 16px;
+}
+
+#contatos {
+    padding: 60px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+#jornada {
+    text-align: justify;
+    padding-right: 50px;
+}
+
+.canais-favoritos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 12px
+}
+
+.canais-favoritos a {
+    color: white;
+}
+
+.canais-favoritos p {
+    font-size: 12px;
+    padding: 0 4px;
+}
+
+.canais-cards {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    transition: all 1s ease
+}
+
+.canais-cards img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.canais-cards h3 {
+    text-align: center;
+}
+
+.canais-cards:hover {
+    transform: translateY(-10px);
+    color: white;
+    border: 4px solid rgb(5, 25, 107);
+    box-shadow: rgb(5, 25, 107);
+}
+
+.canais-cards:hover h3 {
+    color: white;
+}
+
+.contact-me {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 10%;
+    right: 2%;
+    z-index: 100;
+    background: #25D366;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 6rem;
+}
+
+.contact-me i {
+    font-size: 40px;
+    color: white;
+}
+
+.contact-me:hover {
+    background-color: white;
+    border: 2px solid #25D366;
+    height: 60px;
+    width: 60px;
+}
+
+.contact-me:hover i {
+    color: #25D366;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    height: 30px;
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+@media screen and (max-width: 1020px) {
+    main {
+        padding: 0 10px;
+    }
+    #aside {
+        width: 100%;
+    }
+    #jornada {
+        text-align: justify;
+        padding-right: 0px;
+    }
+    #meus-canais-favoritos h2 { 
+        text-align: center
+    }
+}
